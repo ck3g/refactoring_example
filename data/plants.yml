@@ -1,0 +1,59 @@
+
+plants:
+  spring_wheat:
+    lat_low: 24.75
+    lat_high: 49.75
+    lng_low: -105.25
+    lng_high: -65.25
+    lat_i: 0
+    lat_j: 50
+    lng_i: 0
+    lng_j: 80
+    code: "fswh"
+    file: "netcdf/GCS/Crops/US/SpringWheat/fractioncover/fswh_2.7_us.0.5deg.nc"
+  soybean:
+    lat_low: 24.75
+    lat_high: 49.75
+    lng_low: -105.25
+    lng_high: -65.25
+    lat_i: 0
+    lat_j: 50
+    lng_i: 0
+    lng_j: 80
+    code: "fsoy"
+    file: "netcdf/GCS/Crops/US/Soybean/fractioncover/fsoy_2.7_us.0.5deg.nc"
+  corn:
+    lat_low: 24.75
+    lat_high: 49.75
+    lng_low: -105.25
+    lng_high: -65.25
+    lat_i: 0
+    lat_j: 50
+    lng_i: 0
+    lng_j: 80
+    code: "fcorn"
+    file: "netcdf/GCS/Crops/US/Corn/fractioncover/fcorn_2.7_us.0.5deg.nc"
+  brazil_sugarcane:
+    lat_low: -26.75
+    lat_high: -4.75
+    lng_low: -60.25
+    lng_high: -30.75
+    lat_i: 0
+    lat_j: 44
+    lng_i: 0
+    lng_j: 59
+    code: "flatent"
+    file:  "netcdf/GCS/Crops/Brazil/Sugarcane/brazil_sugc_latent_10yr_avg.nc"
+  vegtype:
+    lat_low: -89.75
+    lat_high: 89.75
+    lng_low: 179.25
+    lng_high: -179.75
+    lat_i: 0
+    lat_j: 360
+    lng_i: 0
+    lng_j: 720
+    code: "vegtype"
+    file: "netcdf/vegtype.nc"
+
+
