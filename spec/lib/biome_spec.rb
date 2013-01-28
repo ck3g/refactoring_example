@@ -1,15 +1,11 @@
-require './workflows_controller.rb'
+require './lib/biome.rb'
 
-describe WorkflowsController do
-  let(:workflows) { WorkflowsController.new }
+describe Biome do
 
-  describe "#get_biome" do
+  describe ".data" do
 
     context "when lat: 30 and lgn: -70" do
-      before do
-        workflows.params = { lat: 30, lng: -70 }
-      end
-
+      let(:coordinates) { Coordinates.new 30, -70 }
       let(:biomes) do
         {
           "native" => Ecosystem.load_json[2],
@@ -19,15 +15,12 @@ describe WorkflowsController do
       end
 
       it "gets northen peatland, soybean, corn and spring wheat" do
-        expect(workflows.get_biome).to eq biomes
+        expect(Biome.data(coordinates)).to eq biomes
       end
     end
 
     context "when lat: -15 and lgn: -40" do
-      before do
-        workflows.params = { lat: -15, lng: -40 }
-      end
-
+      let(:coordinates) { Coordinates.new -15, -40 }
       let(:biomes) do
         {
           "native" => Ecosystem.load_json[2],
@@ -37,7 +30,7 @@ describe WorkflowsController do
       end
 
       it "gets northen peatland and brasil sugarcane" do
-        expect(workflows.get_biome).to eq biomes
+        expect(Biome.data(coordinates)).to eq biomes
       end
     end
   end

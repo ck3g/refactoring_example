@@ -1,3 +1,5 @@
+require 'json'
+
 # Stub class
 class Rails
   def self.root

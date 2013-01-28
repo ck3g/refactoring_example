@@ -2,6 +2,17 @@ require './lib/coordinates.rb'
 
 describe Coordinates do
 
+  describe ".new" do
+    let(:coordinates) { Coordinates.new 100, 200 }
+    it "latitude is 100" do
+      expect(coordinates.latitude).to eq 100
+    end
+
+    it "longitude is 200" do
+      expect(coordinates.longitude).to eq 200
+    end
+  end
+
   describe "#remap_range" do
     context "when pass -70, -106, -65.25, 0, 80" do
       it "return 70" do
