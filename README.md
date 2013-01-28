@@ -4,7 +4,7 @@ Refactoring example for [get_biome](https://github.com/delinquentme/ghgvc/blob/m
 
 ## Usage
 
-    git clone git remote add origin git@github.com:ck3g/refactoring_example.git
+    git clone git@github.com:ck3g/refactoring_example.git
     cd refactoring_example
     bundle
     rspec spec/
